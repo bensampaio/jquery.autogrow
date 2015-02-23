@@ -1,5 +1,5 @@
 {
-	"name" : "jQueryAutogrow",
+	"name" : "jquery-autogrow",
 	"version" : "1.0.0",
 	"main" : "jquery.autogrow.js",
 	"ignore" : [],
