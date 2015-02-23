@@ -1,5 +1,5 @@
 {
-	"name" : "jquery-autogrow",
+	"name" : "jquery-autogrow-textarea",
 	"version" : "1.0.0",
 	"main" : "jquery.autogrow.js",
 	"ignore" : [],
