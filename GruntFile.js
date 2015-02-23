@@ -1,22 +1,30 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    uglify: {
+    cssmin: {
       plugin : {
-        options: {
-          compress : true
-        },
+        files : {
+          'dist/jquery.autogrow.min.css': [ 'src/jquery.autogrow.css' ],
+        }
+      }
+    },
+    uglify: {
+      options: {
+        compress : true
+      },
+      plugin : {
         files: {
-          'jquery.autogrow.min.js': [ 'jquery.autogrow.js' ],
+          'dist/jquery.autogrow.min.js': [ 'src/jquery.autogrow.js' ],
         },
       }
     }
   });
 
   // Load the plugins tasks
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', [ 'cssmin', 'uglify' ]);
 
 };

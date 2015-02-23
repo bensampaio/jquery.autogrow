@@ -22,7 +22,7 @@ Or, just clone it.
 Include the CSS file on the head of your page by adding the following:
 
 ```html
-<link type="text/css" href="/path/to/bower/jquery.autogrow.css" rel="stylesheet">
+<link type="text/css" href="/path/to/bower/jquery-autogrow-textarea/dist/jquery.autogrow.min.css" rel="stylesheet">
 ```
 
 Alternatively, you can also add the content of this file to your own CSS files.
@@ -30,7 +30,7 @@ Alternatively, you can also add the content of this file to your own CSS files.
 Include the minified JS file on the head or body of your page by adding the folllowing:
 
 ```html
-<script type="text/javascript" src="/path/to/bower/jquery-autogrow-textarea/jquery.autogrow.min.js"></script>
+<script type="text/javascript" src="/path/to/bower/jquery-autogrow-textarea/dist/jquery.autogrow.min.js"></script>
 ```
 
 Make sure the script is loaded after jQuery.
