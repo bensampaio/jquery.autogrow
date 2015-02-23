@@ -17,18 +17,8 @@
 			var textarea = $(element);
 			var mirror = $('<div></div>');
 
-			mirror
-				// Add mirror classes
-				.addClass(mirrorClass)
-
-				// Set mirror default CSS
-				.css({
-					'position' : 'absolute',
-					'visibility' : 'hidden',
-					'white-space' : 'normal',
-					'word-break' : 'break-word',
-					'z-index' : -1
-				});
+			// Add mirror classes
+			mirror.addClass(mirrorClass);	
 
 			// Add options properties to mirror element
 			if(options !== undefined) {
@@ -73,7 +63,7 @@
 				.trigger(pluginName+'.resize');
 
 			// Add mirror to DOM
-			textarea.before(mirror);
+			textarea.after(mirror);
 		});
 	}
 })($ || jquery);
