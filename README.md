@@ -13,7 +13,7 @@ Check the [plugin page](http://bensampaio.github.io/jquery.autogrow) if you want
 
 Install using bower by running the following command:
 
-`$ bower install jquery-autogrow-textarea --save
+`$ bower install jquery-autogrow-textarea --save`
 
 Or, just clone it.
 
