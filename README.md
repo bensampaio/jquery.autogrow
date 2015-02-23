@@ -1,4 +1,5 @@
 # jQuery Plugin - AutoGrow Textarea
+===================================
 
 ## Description
 
@@ -6,13 +7,13 @@ This plugin allows a textarea field to grow vertically with its content. To achi
 
 ## Test it!
 
-Check the this [fiddle](http://jsfiddle.net/khhq7vch/1/) if you want to check how it works first.
+Check the [plugin page](http://bensampaio.github.io/jquery.autogrow) if you want to check how it works first.
 
 ## Installation
 
 Install using bower by running the following command:
 
-> bower install jquery-autogrow-textarea --save
+`$ bower install jquery-autogrow-textarea --save
 
 Or, just clone it.
 
@@ -20,19 +21,25 @@ Or, just clone it.
 
 Include the CSS file on the head of your page by adding the following:
 
-> <style src="path/to/bower/jquery-autogrow-textarea/jquery.autogrow.css"></style>
+```html
+<link type="text/css" href="/path/to/bower/jquery.autogrow.css" rel="stylesheet">
+```
 
 Alternatively, you can also add the content of this file to your own CSS files.
 
 Include the minified JS file on the head or body of your page by adding the folllowing:
 
-> <script src="path/to/bower/jquery-autogrow-textarea/jquery.autogrow.min.js"></script>
+```html
+<script type="text/javascript" src="/path/to/bower/jquery-autogrow-textarea/jquery.autogrow.min.js"></script>
+```
 
 Make sure the script is loaded after jQuery.
 
 Initialize it as follows:
 
-> $('textarea').autogrow()
+```javascript
+$('textarea').autogrow()
+```
 
 ## Options
 
@@ -43,7 +50,9 @@ You can also initialize it with the following options:
 
 Example:
 
-> $('textarea').autogrow({ id : 'my-textarea-mirror', classes : 'special-textarea-mirror' })
+```javascript
+$('textarea').autogrow({ id : 'my-textarea-mirror', classes : 'special-textarea-mirror' })
+```
 
 **Note**: If there is more then one element on the jQuery collection a index will be appended to the id attribute.
 
@@ -51,4 +60,6 @@ Example:
 
 If your textarea styles change you can trigger the 'autogrow.resize' event to correct the mirror styles as follows:
 
-> $('textarea').trigger('autogrow.resize')
+```javascript
+$('textarea').trigger('autogrow.resize')
+```
