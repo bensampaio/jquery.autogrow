@@ -2,6 +2,7 @@
 	"name" : "jQueryAutogrow",
 	"version" : "1.0.0",
 	"main" : "jquery.autogrow.js",
+	"ignore" : [],
 	"dependencies" : {
 		"jquery" : "2.*"
 	}
