@@ -60,10 +60,10 @@
 						'zoom' : textarea.css('zoom')
 					});
 				})
-				.trigger(pluginName+'.resize');
+				.trigger(pluginName+'.resize')
 
-			// Add mirror to DOM
-			textarea.after(mirror);
+				// Add mirror to DOM
+				.after(mirror);
 		});
 	}
-})($ || jquery);
+})(jquery);
