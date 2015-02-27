@@ -66,4 +66,4 @@
 				.after(mirror);
 		});
 	}
-})(jquery);
+})(jQuery);
