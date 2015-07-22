@@ -38,8 +38,19 @@
 					// Add a non breakable space to the message if it is empty or the last character is a line break (otherwise line break height is ignored)
 					if(!message || message.charAt(message.length - 1) == '\n') message+= '\xA0';
 
+					// Parse message content
 					// Replace all line breaks in the message by the line break HTML element and add message to mirror element
-					mirror.html(message.replace(/\n/g, '<br/>'));
+					message = message
+						.replace(/&/g, '&amp;')
+						.replace(/"/g, '&quot;')
+						.replace(/'/g, '&#39;')
+						.replace(/</g, '&lt;')
+						.replace(/>/g, '&gt;')
+						.replace(/ /g, '&nbsp;')
+						.replace(/\n/g, '<br/>');
+
+					// Add text to message field
+					mirror.html(message);
 
 					// Set textarea height equal to mirror height
 					textarea.height(mirror.height());
