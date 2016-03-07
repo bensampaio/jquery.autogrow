@@ -71,7 +71,7 @@
                         'visibility': 'hidden',
                         'white-space': 'normal',
                         'width': textarea.css('width'),
-                        'word-break': 'break-work',
+                        'word-break': 'break-word',
                         'z-index': -1,
                         'zoom': textarea.css('zoom'),
                     });
