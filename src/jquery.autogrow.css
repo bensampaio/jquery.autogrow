@@ -1,10 +1,10 @@
-textarea.autogrow-field {
+.autogrow-field {
 	min-height: 1em;
 	overflow: hidden;
 	resize: none;
 }
 
-textarea.autogrow-field ~ .autogrow-mirror {
+.autogrow-field ~ .autogrow-mirror {
 	position: absolute;
 	visibility: hidden;
 	white-space: normal;
