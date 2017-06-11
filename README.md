@@ -1,5 +1,7 @@
 # jQuery Plugin - AutoGrow Textarea
-===================================
+
+[![Bower version](https://badge.fury.io/bo/jquery-autogrow-textarea.svg)](https://badge.fury.io/bo/jquery-autogrow-textarea)
+[![npm version](https://badge.fury.io/js/jquery-autogrow-textarea.svg)](https://badge.fury.io/js/jquery-autogrow-textarea)
 
 ## Description
 
@@ -11,11 +13,10 @@ Check the [plugin page](http://bensampaio.github.io/jquery.autogrow) if you want
 
 ## Installation
 
-Install using bower by running the following command:
+Install via `npm` or `yarn`:
 
-`$ bower install jquery-autogrow-textarea --save`
-
-Or, just clone it.
+`$ npm i jquery-autogrow-textarea`
+`$ yarn add jquery-autogrow-textarea`
 
 ## Usage
 
@@ -25,9 +26,7 @@ Include the CSS file on the head of your page by adding the following:
 <link type="text/css" href="/path/to/bower/jquery-autogrow-textarea/dist/jquery.autogrow.min.css" rel="stylesheet">
 ```
 
-Alternatively, you can also add the content of this file to your own CSS files.
-
-Include the minified JS file on the head or body of your page by adding the folllowing:
+Include the minified JS file on body of your page by adding the folllowing:
 
 ```html
 <script type="text/javascript" src="/path/to/bower/jquery-autogrow-textarea/dist/jquery.autogrow.min.js"></script>
@@ -45,8 +44,8 @@ $('textarea').autogrow()
 
 You can also initialize it with the following options:
 
-- id: the id attribute to add to the mirror element;
-- classes: the classes to add to the mirror element;
+- `id`: the id attribute to add to the mirror element;
+- `classes`: the classes to add to the mirror element;
 
 Example:
 
@@ -54,7 +53,7 @@ Example:
 $('textarea').autogrow({ id : 'my-textarea-mirror', classes : 'special-textarea-mirror' })
 ```
 
-**Note**: If there is more then one element on the jQuery collection a index will be appended to the id attribute.
+**Note**: If there is more than one element on the jQuery collection a index will be appended to the id attribute.
 
 ## Events
 
